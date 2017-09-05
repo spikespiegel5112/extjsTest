@@ -48,9 +48,9 @@ Ext.define('app.view.main.tree.Tree', {
     store:store
 });
 
-Ext.define('app.view.main.tree.Tree', {
+Ext.define('app.view.main.tree.list', {
     extend: 'Ext.tree.Panel',
-    xtype: 'maintree',
+    xtype: 'mainlist',
     title: 'Simple Tree',
     width: 200,
     height: 800,
