@@ -46,7 +46,14 @@ Ext.define('app.view.main.tree.Tree', {
     split: true,
     lines: true,
     animate: true,
+    rootVisible: true,
     store:store,
+    viewConfig: {
+        plugins: {
+            ptype: 'treeviewdragdrop',
+            containerScroll: true
+        }
+    },
     listeners:{
         click:{
             fn:function(){
