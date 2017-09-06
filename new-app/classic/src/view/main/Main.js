@@ -61,7 +61,7 @@ Ext.define('app.view.main.Main', {
     },
 
     defaults: {
-        bodyPadding: 20,
+        bodyPadding: 5,
         tabConfig: {
             plugins: 'responsive',
             responsiveConfig: {
@@ -90,11 +90,11 @@ Ext.define('app.view.main.Main', {
         title: 'Users',
         iconCls: 'fa-user',
         layout : {
-            type : 'hbox',
+            type : 'vbox',
             align : 'stretch'
         },
         items: [{
-            xtype: 'maintree'
+            xtype: 'mainlist'
         }]
     }, {
         title: 'Groups',
