@@ -61,7 +61,7 @@ Ext.define('app.view.main.Main', {
     },
 
     defaults: {
-        bodyPadding: 5,
+        bodyPadding: '0px 5px 0px 5px',
         tabConfig: {
             plugins: 'responsive',
             responsiveConfig: {
@@ -81,10 +81,15 @@ Ext.define('app.view.main.Main', {
     items: [{
         title: 'Home',
         iconCls: 'fa-home',
-
+        layout: 'column',
         // The following grid shares a store with the classic version's grid as well!
         items: [{
-            xtype: 'maintree'
+            xtype: 'maintree',
+            padding: '0px 0px 0px 5px'
+        }, {
+            xtype: 'mainlist',
+            width: 800,
+            padding: '0px 0px 0px 5px'
         }]
     }, {
         title: 'Users',
