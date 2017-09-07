@@ -18,6 +18,7 @@ Ext.define('app.view.main.Main', {
         'app.view.main.MainModel',
         'app.view.main.List',
         'app.view.main.tree.Tree',
+        'app.view.main.tree.Toolbar',
     ],
 
     controller: 'main',
@@ -81,15 +82,13 @@ Ext.define('app.view.main.Main', {
     items: [{
         title: 'Home',
         iconCls: 'fa-home',
-        layout: 'column',
+
         // The following grid shares a store with the classic version's grid as well!
         items: [{
-            xtype: 'maintree',
-            padding: '0px 0px 0px 5px'
-        }, {
-            xtype: 'mainlist',
+            xtype:'treeToolbar',
+            layout: 'column',
             width: 800,
-            padding: '0px 0px 0px 5px'
+
         }]
     }, {
         title: 'Users',
