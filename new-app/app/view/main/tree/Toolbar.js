@@ -4,7 +4,7 @@ var button = Ext.create('Ext.Button', {
 
 Ext.define('app.view.main.tree.Toolbar',{
     extend: 'Ext.panel.Panel',
-    xtype:'treeToolbar',
+    xtype:'treetoolbar',
     title: '上海千人计划平台评审系统',
     layout: {
         type: 'hbox'

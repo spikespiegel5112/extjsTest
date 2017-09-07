@@ -37,9 +37,9 @@ var store = Ext.create('Ext.data.TreeStore', {
     }
 });
 
-Ext.define('app.view.main.MainMenu', {
+Ext.define('app.view.main.mainmenu', {
     extend: 'Ext.panel.Panel',
-    xtype: 'MainMenu',
+    xtype: 'mainmenu',
     title: '',
     layout: 'accordion',
     padding: "0 5px 0 0",

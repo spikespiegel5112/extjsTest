@@ -39,7 +39,7 @@ var store = Ext.create('Ext.data.TreeStore', {
 
 Ext.define('app.view.main.tree.TreeView', {
     extend: 'Ext.panel.Panel',
-    xtype: 'TreeGrid',
+    xtype: 'treegrid',
     layout: {
         type: 'hbox',
         pack: 'start',

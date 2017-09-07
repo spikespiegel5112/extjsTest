@@ -18,7 +18,7 @@ Ext.define('app.view.main.Main', {
         // 'app.view.main.MainController',
         // 'app.view.main.MainModel',
         // 'app.view.main.List',
-        // 'app.view.main.MainMenu',
+        // 'app.view.main.mainmenu',
         // 'app.view.main.tree.Toolbar',
     ],
 
@@ -38,13 +38,13 @@ Ext.define('app.view.main.Main', {
     },
 
     items: [{
-        xtype:'treeToolbar',
+        xtype:'MyHeader',
         region: 'north'
     }, {
-        xtype:'MainMenu',
+        xtype:'mainmenu',
         region: 'west'
     }, {
-        xtype:'TreeGrid',
+        xtype:'treegrid',
         region: 'center'
     }]
 });
