@@ -46,7 +46,7 @@ Ext.define('app.view.main.tree.TreeView', {
         align: 'stretch',
     },
     items:[{
-        extend: 'Ext.tree.Panel',
+        xtype: 'treepanel',
         title: 'dsadsa',
         flex: 1,
         split: true,

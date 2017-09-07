@@ -40,12 +40,12 @@ var store = Ext.create('Ext.data.TreeStore', {
 Ext.define('app.view.main.MainMenu', {
     extend: 'Ext.panel.Panel',
     xtype: 'MainMenu',
-    title: 'Simple Tree',
+    title: '上海千人计划',
     layout: 'accordion',
     padding: "0 5px 0 0",
     width: 200,
     items: [{
-        extend: 'Ext.tree.Panel',
+        xtype: 'treepanel',
         title: '1',
         split: true,
         lines: true,
@@ -66,7 +66,7 @@ Ext.define('app.view.main.MainMenu', {
             }
         }
     }, {
-        extend: 'Ext.tree.Panel',
+        xtype: 'treepanel',
         title: '2',
         split: true,
         lines: true,
