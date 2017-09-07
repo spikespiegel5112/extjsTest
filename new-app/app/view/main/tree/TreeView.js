@@ -41,11 +41,12 @@ Ext.define('app.view.main.tree.TreeView', {
     extend: 'Ext.panel.Panel',
     xtype: 'treegrid',
     layout: {
-        type: 'hbox',
-        pack: 'start',
-        align: 'stretch',
+        type: 'border'
     },
     items:[{
+        xtype: 'treetoolbar',
+        region: 'north'
+    }, {
         xtype: 'treepanel',
         title: '',
         flex: 1,
@@ -66,10 +67,11 @@ Ext.define('app.view.main.tree.TreeView', {
                     alert('dsds')
                 }
             }
-        }
+        },
+        region: 'west'
     },{
         xtype: 'mainlist',
         flex: 4,
-        width:200
+        region: 'center'
     }]
 })

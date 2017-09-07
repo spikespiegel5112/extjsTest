@@ -1,4 +1,3 @@
-
 Ext.define('app.view.main.tree.Tree', {
     extend: 'Ext.tree.Panel',
     xtype: 'maintree',
