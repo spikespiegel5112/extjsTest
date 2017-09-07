@@ -4,7 +4,7 @@ var button = Ext.create('Ext.Button', {
 
 Ext.define('app.view.main.tree.Toolbar',{
     extend: 'Ext.container.Container',
-    xtype:'treeToolbar',
+    xtype:'header',
     layout: {
         type: 'hbox'
     },

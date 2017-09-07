@@ -3,15 +3,17 @@ var button = Ext.create('Ext.Button', {
 });
 
 Ext.define('app.view.main.tree.Toolbar',{
-    extend: 'Ext.container.Container',
+    extend: 'Ext.panel.Panel',
     xtype:'treeToolbar',
+    title: '上海千人计划平台评审系统',
     layout: {
         type: 'hbox'
     },
     width: 400,
     renderTo: Ext.getBody(),
-    border: 1,
-    style: {borderColor:'#000000', borderStyle:'solid', borderWidth:'1px'},
+    border: 0,
+    margin: '0 0 10px 0',
+    style: {boxShadow:'0 5px 5px #ccc'},
     defaults: {
         labelWidth: 80,
         // implicitly create Container by specifying xtype
@@ -21,13 +23,5 @@ Ext.define('app.view.main.tree.Toolbar',{
             padding: '10px'
         }
     },
-    items: [{
-        xtype: 'datefield',
-        name: 'startDate',
-        fieldLabel: 'Start date'
-    },{
-        xtype: 'datefield',
-        name: 'endDate',
-        fieldLabel: 'End date'
-    }]
+
 })
