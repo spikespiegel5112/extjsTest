@@ -39,7 +39,7 @@ var store = Ext.create('Ext.data.TreeStore', {
 
 Ext.define('app.view.main.tree.Tree', {
     extend: 'Ext.tree.Panel',
-    xtype: 'maintree',
+    xtype: 'tree',
     title: 'Simple Tree',
     width: 200,
     height: 800,

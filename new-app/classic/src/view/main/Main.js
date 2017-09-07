@@ -85,9 +85,7 @@ Ext.define('app.view.main.Main', {
 
         // The following grid shares a store with the classic version's grid as well!
         items: [{
-            xtype:'treeToolbar',
-            layout: 'column',
-            width: 800,
+            xtype:'treegrid'
 
         }]
     }, {
