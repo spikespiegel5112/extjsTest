@@ -41,7 +41,11 @@ Ext.define('app.view.main.tree.TreeView', {
     extend: 'Ext.panel.Panel',
     xtype: 'treegrid',
     title: '',
-    // layout: '',
+    layout: {
+        type: 'hbox',
+        pack: 'start',
+        align: 'stretch',
+    },
     items:[{
         extend: 'Ext.tree.Panel',
         xtype: 'tree',
@@ -67,6 +71,7 @@ Ext.define('app.view.main.tree.TreeView', {
             }
         }
     },{
-        xtype: 'mainlist'
+        xtype: 'mainlist',
+        flex: 1
     }]
 })
