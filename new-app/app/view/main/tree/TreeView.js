@@ -44,9 +44,6 @@ Ext.define('app.view.main.tree.TreeView', {
         type: 'border'
     },
     items:[{
-        xtype: 'treetoolbar',
-        region: 'north'
-    }, {
         xtype: 'treepanel',
         title: '',
         flex: 1,

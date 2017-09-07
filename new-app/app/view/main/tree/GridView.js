@@ -1,9 +1,13 @@
 Ext.define('app.view.main.tree.GridView', {
     extend: 'Ext.panel.Panel',
     xtype: 'gridview',
+    layout: 'border',
     items:[{
-        xtype: 'treetoolbar'
+        xtype: 'treetoolbar',
+        region: 'north',
+        title: 'dsadsad'
     },{
-        xtype: 'mainlist'
+        xtype: 'mainlist',
+        region: 'center'
     }]
 })
