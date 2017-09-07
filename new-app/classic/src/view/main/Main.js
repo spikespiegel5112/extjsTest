@@ -5,8 +5,9 @@
  *
  * TODO - Replace this content of this view to suite the needs of your application.
  */
-    Ext.define('app.view.main.Main', {
-    extend: 'Ext.panel.Panel',
+Ext.define('app.view.main.Main', {
+    extend: 'Ext.container.Viewport',
+    renderTo: Ext.getBody(),
     xtype: 'index',
 
     requires: [
@@ -17,19 +18,15 @@
         'app.view.main.MainController',
         'app.view.main.MainModel',
         'app.view.main.List',
-        'app.view.main.tree.Tree',
+        'app.view.main.MainMenu',
         'app.view.main.tree.Toolbar',
     ],
 
-    controller: 'main',
-    viewModel: 'main',
+    // controller: 'main',
+    // viewModel: 'main',
 
-    ui: 'navigation',
-    layout: {
-        type: 'vbox',
-        pack: 'start',
-        align: 'stretch',
-    },
+    // ui: 'navigation',
+    layout: 'border',
     header: {
         title: {
             bind: {
@@ -41,7 +38,13 @@
     },
 
     items: [{
-        xtype:'maintab',
-        flex: 1
+        xtype:'treeToolbar',
+        region: 'north'
+    }, {
+        xtype:'MainMenu',
+        region: 'west'
+    }, {
+        xtype:'TreeGrid',
+        region: 'center'
     }]
 });

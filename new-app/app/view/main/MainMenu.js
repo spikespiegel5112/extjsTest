@@ -37,18 +37,16 @@ var store = Ext.create('Ext.data.TreeStore', {
     }
 });
 
-Ext.define('app.view.main.tree.TreeView', {
+Ext.define('app.view.main.MainMenu', {
     extend: 'Ext.panel.Panel',
-    xtype: 'TreeGrid',
-    layout: {
-        type: 'hbox',
-        pack: 'start',
-        align: 'stretch',
-    },
-    items:[{
+    xtype: 'MainMenu',
+    title: 'Simple Tree',
+    layout: 'accordion',
+    padding: "0 5px 0 0",
+    width: 200,
+    items: [{
         extend: 'Ext.tree.Panel',
-        title: 'dsadsa',
-        flex: 1,
+        title: '1',
         split: true,
         lines: true,
         animate: true,
@@ -60,16 +58,33 @@ Ext.define('app.view.main.tree.TreeView', {
                 containerScroll: true
             }
         },
-        listeners:{
-            click:{
-                fn:function(){
+        listeners: {
+            click: {
+                fn: function () {
                     alert('dsds')
                 }
             }
         }
-    },{
-        xtype: 'mainlist',
-        flex: 4,
-        width:200
+    }, {
+        extend: 'Ext.tree.Panel',
+        title: '2',
+        split: true,
+        lines: true,
+        animate: true,
+        rootVisible: true,
+        store: store,
+        viewConfig: {
+            plugins: {
+                ptype: 'treeviewdragdrop',
+                containerScroll: true
+            }
+        },
+        listeners: {
+            click: {
+                fn: function () {
+                    alert('dsds')
+                }
+            }
+        }
     }]
-})
+});
