@@ -43,7 +43,7 @@ Ext.define('app.view.main.tree.TreeView', {
     layout: {
         type: 'border'
     },
-    items:[{
+    items: [{
         xtype: 'searchbar',
         region: 'north'
     }, {
@@ -55,21 +55,22 @@ Ext.define('app.view.main.tree.TreeView', {
         animate: true,
         rootVisible: true,
         store: store,
+        collapsible: true,
         viewConfig: {
             plugins: {
                 ptype: 'treeviewdragdrop',
                 containerScroll: true
             }
         },
-        listeners:{
-            click:{
-                fn:function(){
+        listeners: {
+            click: {
+                fn: function () {
                     alert('dsds')
                 }
             }
         },
         region: 'west'
-    },{
+    }, {
         xtype: 'mainlist',
         flex: 4,
         region: 'center'

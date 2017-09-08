@@ -6,13 +6,12 @@ Ext.define('app.view.main.tree.Toolbar',{
         pack: 'end',
         align: 'stretch',
     },
-    border: 0,
     margin: '0 0 10px 0',
     items:[{
         xtype: 'textfield',
-        text: 'dsdsds'
+        width: 300
     },{
         xtype: 'button',
-        text: 'search'
+        text: '搜索'
     }]
 })
