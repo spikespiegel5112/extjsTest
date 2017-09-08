@@ -41,6 +41,8 @@ Ext.define('app.view.main.mainmenu', {
     extend: 'Ext.panel.Panel',
     xtype: 'mainmenu',
     title: '',
+    collapsed: true,
+    collapsible: true,
     layout: 'accordion',
     padding: "0 5px 0 0",
     width: 200,
