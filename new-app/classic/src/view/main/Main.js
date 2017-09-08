@@ -38,7 +38,7 @@ Ext.define('app.view.main.Main', {
     },
 
     items: [{
-        xtype:'MyHeader',
+        xtype:'commonheader',
         region: 'north'
     }, {
         xtype:'mainmenu',

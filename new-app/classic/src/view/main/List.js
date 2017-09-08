@@ -10,15 +10,25 @@ Ext.define('app.view.main.List', {
     ],
 
     title: '',
+    tbar: [{
+        xtype: 'button',
+        text: 'Button 1'
+    },{
+        xtype: 'button',
+        text: 'Button 1'
+    },{
+        xtype: 'button',
+        text: 'Button 1'
+    }],
 
     store: {
         type: 'personnel'
     },
 
     columns: [
-        { text: 'Name',  dataIndex: 'name' },
-        { text: 'Email', dataIndex: 'email', flex: 1 },
-        { text: 'Phone', dataIndex: 'phone', flex: 1 }
+        {text: 'Name', dataIndex: 'name'},
+        {text: 'Email', dataIndex: 'email', flex: 1},
+        {text: 'Phone', dataIndex: 'phone', flex: 1}
     ],
 
     listeners: {

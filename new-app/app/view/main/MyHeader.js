@@ -4,12 +4,11 @@ var button = Ext.create('Ext.Button', {
 
 Ext.define('app.view.main.MyHeader',{
     extend: 'Ext.panel.Panel',
-    xtype:'MyHeader',
+    xtype:'commonheader',
     title: '上海千人计划平台评审系统',
     layout: {
         type: 'hbox'
     },
-    width: 400,
     renderTo: Ext.getBody(),
     border: 0,
     margin: '0 0 10px 0',

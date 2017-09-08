@@ -1,8 +1,6 @@
-
-
 Ext.define('app.view.main.tree.Toolbar',{
     extend: 'Ext.panel.Panel',
-    xtype:'treetoolbar',
+    xtype:'toolbar',
     layout: {
         type: 'hbox',
         pack: 'end',
@@ -11,6 +9,15 @@ Ext.define('app.view.main.tree.Toolbar',{
     border: 0,
     margin: '0 0 10px 0',
     items:[{
+        xtype: 'button',
+        text: 'dsdsds'
+    },{
+        xtype: 'button',
+        text: 'dsdsds'
+    },{
+        xtype: 'button',
+        text: 'dsdsds'
+    },{
         xtype: 'button',
         text: 'dsdsds'
     },{
