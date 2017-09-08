@@ -14,12 +14,14 @@ Ext.define('app.view.main.List', {
         xtype: 'button',
         text: 'Button 1'
     },{
-        xtype: 'button',
+        xtype: 'splitbutton',
         text: 'Button 1'
     },{
-        xtype: 'button',
+        xtype: 'textfield',
         text: 'Button 1'
-    }],
+    },
+        'text 1'
+    ],
 
     store: {
         type: 'personnel'
@@ -34,7 +36,6 @@ Ext.define('app.view.main.List', {
     listeners: {
         select: 'onItemSelected'
     }
-
-
 });
+
 
