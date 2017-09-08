@@ -3,7 +3,7 @@ Ext.define('app.view.main.tree.GridView', {
     xtype: 'gridview',
     layout: 'border',
     tbar: [
-        { xtype: 'button', text: 'Button 1' }
+        { xtype: 'button', text: 'Button 1'}
     ],
     items:[{
         xtype: 'mainlist',

@@ -5,20 +5,17 @@
  *
  * TODO - Replace this content of this view to suite the needs of your application.
  */
-Ext.define('app.view.main.MainOld', {
+Ext.define('extWeb.view.main.Main', {
     extend: 'Ext.tab.Panel',
     xtype: 'app-main',
 
     requires: [
         'Ext.plugin.Viewport',
         'Ext.window.MessageBox',
-        'Ext.tree.Panel',
 
-        'app.view.main.MainController',
-        'app.view.main.MainModel',
-        'app.view.main.List',
-        'app.view.main.tree.Tree',
-        'app.view.main.tree.Toolbar',
+        'extWeb.view.main.MainController',
+        'extWeb.view.main.MainModel',
+        'extWeb.view.main.List'
     ],
 
     controller: 'main',
@@ -32,7 +29,6 @@ Ext.define('app.view.main.MainOld', {
 
     header: {
         layout: {
-            type:'vbox',
             align: 'stretchmax'
         },
         title: {
@@ -62,7 +58,7 @@ Ext.define('app.view.main.MainOld', {
     },
 
     defaults: {
-        bodyPadding: '0px 5px 0px 5px',
+        bodyPadding: 20,
         tabConfig: {
             plugins: 'responsive',
             responsiveConfig: {
@@ -80,23 +76,18 @@ Ext.define('app.view.main.MainOld', {
     },
 
     items: [{
-        title: 'Home_old',
+        title: 'Home',
         iconCls: 'fa-home',
         // The following grid shares a store with the classic version's grid as well!
         items: [{
-            xtype:'treegrid'
-
+            xtype: 'mainlist'
         }]
     }, {
         title: 'Users',
         iconCls: 'fa-user',
-        layout : {
-            type : 'vbox',
-            align : 'stretch'
-        },
-        items: [{
-            xtype: 'mainlist'
-        }]
+        bind: {
+            html: '{loremIpsum}'
+        }
     }, {
         title: 'Groups',
         iconCls: 'fa-users',
