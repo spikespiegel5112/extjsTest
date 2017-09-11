@@ -11,15 +11,18 @@ Ext.define('app.view.main.Main', {
     xtype: 'index',
 
     requires: [
-        // 'Ext.plugin.Viewport',
-        // 'Ext.window.MessageBox',
-        // 'Ext.tree.Panel',
+        'Ext.layout.container.Border',
+        'Ext.plugin.Viewport',
+        'Ext.window.MessageBox',
+        'Ext.tab.Panel',
+        'Ext.list.Tree',
+        'Ext.button.Segmented',
 
-        // 'app.view.main.MainController',
-        // 'app.view.main.MainModel',
-        // 'app.view.main.List',
-        // 'app.view.main.mainmenu',
-        // 'app.view.main.tree.Toolbar',
+        'app.view.main.MainController',
+        'app.view.main.MainModel',
+        'app.view.main.List',
+        'app.view.main.mainmenu',
+        'app.view.main.tree.Toolbar',
     ],
 
     // controller: 'main',

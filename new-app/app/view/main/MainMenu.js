@@ -28,57 +28,92 @@ Ext.define('app.view.main.mainmenu', {
             align: 'stretch'
         },
         items:[{
-            xtype: 'button',
-            text: '主页'
-        }, {
-            xtype: 'button',
-            text: '单位基本信息管理'
-        }, {
-            xtype: 'button',
-            text: '人才基本信息管理'
-        }, {
-            xtype: 'button',
-            text: '形式审查'
-        }, {
-            xtype: 'button',
-            text: '人才分组'
-        }, {
-            xtype: 'button',
-            text: '专家信息录入'
-        }, {
-            xtype: 'button',
-            text: '评审'
-        }, {
-            xtype: 'button',
-            text: '确定上报人员'
-        }, {
-            xtype: 'button',
-            text: '人才列表'
-        }, {
-            xtype: 'button',
-            text: '专家信息管理'
+            xtype: 'treelist',
+            reference: 'navigationTreeList',
+            itemId: 'navigationTreeList',
+            store: {
+                root:{
+                    expanded: true,
+                    children:[{
+                        text:'dsddsds',
+                        iconCls: 'x-fa fa-frown-o',
+                        leaf: true,
+                    },{
+                        text:'dsddsds',
+                        leaf: true,
+                    },{
+                        text:'dsddsds',
+                        leaf: true,
+                    },{
+                        text:'dsddsds',
+                        children: [{
+                            text: 'India',
+                            leaf: true,
+                        }, {
+                            text: 'China',
+                            leaf: true,
+                        }]
+                    },{
+                        text:'dsddsds',
+                        leaf: true,
+                    }]
+                }
+            },
+            width: 250,
+            expanderFirst: false,
+            expanderOnly: false,
+            listeners: {
+                selectionchange: 'onNavigationTreeSelectionChange'
+            }
         }]
     },{
         title:'系统管理',
         layout: {
             type: 'vbox',
             align: 'stretch',
-
         },
         items:[{
-            xtype: 'button',
-            text: 'Button 1'
-        }, {
-            xtype: 'button',
-            text: 'Button 2'
-        }, {
-            xtype: 'button',
-            text: 'Button 3'
-        }, {
-            xtype: 'button',
-            text: 'Button 4'
+            xtype: 'treelist',
+            // reference: 'navigationTreeList',
+            itemId: 'navigationTreeList',
+            store: {
+                root:{
+                    expanded: true,
+                    children:[{
+                        text:'dsddsds',
+                        iconCls: 'x-fa fa-frown-o',
+                        leaf: true,
+                    },{
+                        text:'dsddsds',
+                        leaf: true,
+                    },{
+                        text:'dsddsds',
+                        leaf: true,
+                    },{
+                        text:'dsddsds',
+                        children: [{
+                            text: 'India',
+                            leaf: true,
+                        }, {
+                            text: 'China',
+                            leaf: true,
+                        }]
+                    },{
+                        text:'dsddsds',
+                        leaf: true,
+                    }]
+                }
+            },
+            width: 250,
+            expanderFirst: false,
+            expanderOnly: false,
+            listeners: {
+                selectionchange: 'onNavigationTreeSelectionChange'
+            }
         }]
     }],
-
-    defaults: {margin: '0 0 1 0'}
 })
+
+
+
+
