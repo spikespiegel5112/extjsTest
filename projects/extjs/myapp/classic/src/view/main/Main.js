@@ -154,7 +154,7 @@ Ext.define('MyApp.view.main.Main', {
         },*/
 		{
 			xtype: 'treelist',
-			ui: 'navigation',
+			ui: 'nav',
 			store: store,
 			width: 200,
 			expanderFirst: false,

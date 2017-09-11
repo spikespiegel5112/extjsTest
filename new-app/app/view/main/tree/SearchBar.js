@@ -1,4 +1,4 @@
-Ext.define('app.view.main.tree.Toolbar',{
+Ext.define('app.view.main.tree.Searchbar',{
     extend: 'Ext.panel.Panel',
     xtype:'searchbar',
     layout: {

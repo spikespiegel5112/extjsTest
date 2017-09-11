@@ -4,7 +4,7 @@
 Ext.define('app.view.main.List', {
     extend: 'Ext.grid.Panel',
     xtype: 'mainlist',
-
+    layout: 'border',
     requires: [
         'app.store.Personnel'
     ],

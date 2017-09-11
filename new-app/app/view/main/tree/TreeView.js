@@ -38,6 +38,9 @@ Ext.define('app.view.main.tree.TreeView', {
     items: [{
         xtype: 'searchbar',
         region: 'north'
+
+    //     xtype: 'toolbar-menus',
+    //     region: 'north'
     }, {
         xtype: 'treepanel',
         title: '',
