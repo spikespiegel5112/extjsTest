@@ -38,13 +38,9 @@ Ext.define('app.view.main.tree.TreeView', {
     items: [{
         xtype: 'searchbar',
         region: 'north'
-
-    //     xtype: 'toolbar-menus',
-    //     region: 'north'
     }, {
         xtype: 'treepanel',
         title: '',
-        flex: 1,
         width: 200,
         margin: '0 0 0 10',
         split: true,
@@ -52,9 +48,10 @@ Ext.define('app.view.main.tree.TreeView', {
         animate: true,
         rootVisible: true,
         store: store,
-        // useArrows: true,
+        useArrows: true,
         // colspan: 2,
         collapsible: true,
+        title:'dds',
         viewConfig: {
             plugins: {
                 ptype: 'treeviewdragdrop',
@@ -71,7 +68,6 @@ Ext.define('app.view.main.tree.TreeView', {
         region: 'west'
     }, {
         xtype: 'mainlist',
-        flex: 4,
         region: 'center'
     }]
 })
