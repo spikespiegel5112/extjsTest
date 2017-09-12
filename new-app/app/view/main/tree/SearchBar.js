@@ -6,7 +6,8 @@ Ext.define('app.view.main.tree.Searchbar',{
         pack: 'end',
         align: 'stretch',
     },
-    margin: '0 0 10px 0',
+    margin: '0 0 10 10',
+    padding: '0 10 0 0',
     items:[{
         xtype: 'textfield',
         width: 300

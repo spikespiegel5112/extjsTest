@@ -45,6 +45,8 @@ Ext.define('app.view.main.tree.TreeView', {
         xtype: 'treepanel',
         title: '',
         flex: 1,
+        width: 200,
+        margin: '0 0 0 10',
         split: true,
         lines: true,
         animate: true,

@@ -24,6 +24,8 @@ Ext.define('app.view.main.Main', {
         'app.view.main.mainmenu',
         'app.view.main.tree.Searchbar',
         'app.view.main.tree.Toolbar',
+
+        'app.store.NavigationTree'
     ],
 
     // controller: 'main',

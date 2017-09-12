@@ -1,3 +1,9 @@
+var menuStore=Ext.define('app.store.NavigationTree',{
+    extend: 'Ext.data.TreeStore',
+    storeId: 'MenuTree',
+
+})
+
 Ext.define('app.view.main.mainmenu', {
     extend: 'Ext.list.Tree',
     xtype: 'mainmenu',

@@ -22,9 +22,10 @@ Ext.define('app.view.main.MyHeader',{
         }
     },
     items:[{
-        xtype: 'component',
+        xtype: 'panel',
         cls: 'app-header-logo',
-        flex: 1
+        flex: 1,
+        title:'上海千人计划平台评审系统',
     },{
         xtype:'combobox',
         align:'middle',

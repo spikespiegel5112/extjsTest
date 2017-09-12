@@ -1,6 +1,6 @@
-Ext JS Kitchen Sink
-Examples
-Details
+// Ext JS Kitchen Sink
+// Examples
+// Details
 
 /**
  * This example illustrates a Toolbar containing different button types, and an input field.

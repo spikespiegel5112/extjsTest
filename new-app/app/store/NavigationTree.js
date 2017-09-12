@@ -1,7 +1,8 @@
-Ext.define('Admin.store.NavigationTree', {
+Ext.define('app.store.NavigationTree', {
     extend: 'Ext.data.TreeStore',
 
-    storeId: 'NavigationTree',
+    // storeId: 'NavigationTree',
+    alias: 'store.navigationtree',
 
     fields: [{
         name: 'text'
